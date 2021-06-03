@@ -1266,7 +1266,7 @@ export default class TransactionBuilder {
             description: fromUtf8(description),
             url: fromUtf8(url),
             total_supply: parseInt(totalSupply),
-            dtc_num: parseInt(dtcRatio),
+            trx_num: parseInt(dtcRatio),
             num: parseInt(tokenRatio),
             start_time: parseInt(saleStart),
             end_time: parseInt(saleEnd),
