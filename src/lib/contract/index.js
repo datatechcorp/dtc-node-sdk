@@ -12,6 +12,7 @@ export default class Contract {
         this.injectPromise = injectpromise(this);
 
         this.address = address;
+        this.originAddress = address;
         this.abi = abi;
 
         this.eventListener = false;
@@ -216,6 +217,7 @@ export default class Contract {
                 );
 
             this.address = contract.contract_address;
+            this.originAddress = contract.origin_address;
             this.bytecode = contract.bytecode;
             this.deployed = true;
 
